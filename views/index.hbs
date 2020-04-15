@@ -1,0 +1,19 @@
+<body>
+    <h1>Welcome to my Weather App</h1>
+
+    {{#if city}}
+    <p>{{city}}</p>
+    {{/if}}
+
+    <form action="/weather" method='GET'>
+        <input name="city" placeholder="Enter a city name" required>
+        <input type="submit" value="Get Weather">
+    </form>
+
+    {{#if error}}
+    <h2>{{error}}</h2>
+    {{/if}}
+
+
+
+</body>
